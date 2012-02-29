@@ -84,13 +84,13 @@
 /* icons */
 
 .icon.contacts {
-  background-image: url("../../../view/theme/diaspora/icons/contacts.png");}
+  background-image: url("../../../view/theme/diabook/icons/contacts.png");}
 .icon.notifications {
-  background-image: url("../../../view/theme/diaspora/icons/notifications.png");}
+  background-image: url("../../../view/theme/diabook/icons/notifications.png");}
 .icon.notify {
-  background-image: url("../../../view/theme/diaspora/icons/notify.png");}
+  background-image: url("../../../view/theme/diabook/icons/notify.png");}
 .icon.messages {
-  background-image: url("../../../view/theme/diaspora/icons/messages.png");}
+  background-image: url("../../../view/theme/diabook/icons/messages.png");}
 
 
 .article	{ background-position: -50px  0px;}
@@ -492,14 +492,7 @@ nav {
   left: 0px;
   top: 0px;
   padding: 0px;
- background: #364A84;
-    background: -moz-linear-gradient(top, #516499 0%, #364a84 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#516499), color-stop(100%,#364a84));
-    background: -webkit-linear-gradient(top, #516499 0%,#364a84 100%);
-    background: -o-linear-gradient(top, #516499 0%,#364a84 100%);
-    background: -ms-linear-gradient(top, #516499 0%,#364a84 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#516499', endColorstr='#364a84',GradientType=0 );
-    background: linear-gradient(top, #516499 0%,#364a84 100%);
+  background: #000;
   color: #ffffff;
   z-index: 100;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
@@ -567,7 +560,7 @@ nav .nav-menu {
   padding: 5px;
   margin: 3px 15px 0px;
   font-size: 13px;
-  border-bottom: 3px solid #364A84;
+  /*border-bottom: 3px solid #364A84;*/
 }
 nav .nav-menu.selected {
   /*border-bottom: 3px solid #9eabb0;*/
@@ -601,6 +594,12 @@ nav #nav-user-linkmenu
 {
   float: right;
 }
+nav #nav-user-linkmenu{
+	margin-right: 0px;
+	}
+nav #nav-home-link{
+	margin-left: 0px;
+	}
 nav #nav-help-link .menu-popup,
 nav #nav-search-link .menu-popup,
 nav #nav-directory-link .menu-popup,
@@ -735,9 +734,10 @@ ul.menu-popup .empty {
 aside {
   display: table-cell;
   vertical-align: top;
-  width: 200px;
+  width: 180px;
   padding: 0px 10px 0px 20px;
   border-right: 1px solid #D2D2D2;
+  float: left;
   /* background: #F1F1F1; */
 }
 aside .vcard .fn {
@@ -792,6 +792,15 @@ aside #dfrn-request-link:hover {
 aside #profiles-menu {
   width: 20em;
 }
+aside #search-text {
+	width: 173px;
+}
+aside #side-follow-url {
+	width: 173px;
+	}
+aside #side-peoplefind-url {
+	width: 173px;
+	}
 #contact-block {
   overflow: auto;
   height: auto;
