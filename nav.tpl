@@ -28,14 +28,21 @@
 		    {{ endif }}
 	
 
-			<li class="nav-menu-icon" id="">
-				<a href="contacts" class="">
-				<span class="icon contacts">Kontakte</span></a>
+			<li class="nav-menu-icon" id="nav-contacts-linkmenu">
+				<a href="$nav.contacts.0" rel="#nav-contacts-menu" title="$nav.contacts.1">
+				<span class="icon contacts">$nav.contacts.1</span></a>
 				<span id="intro-update" class="nav-notify"></span>
+				<ul id="nav-contacts-menu" class="menu-popup">
+					<li id="nav-contacts-see-intro"><a href="$nav.notifications.0">Kontaktanfragen</a><span id="intro-update" class="nav-notify"></span></li>
+					<li id="nav-contacts-all"><a href="contacts">$nav.contacts.1</a></li> 
+				</ul>
 			</li>	
-			<!php $string = t("Inbox"); </php>
-	
-			<li  id="nav-messages-linkmenu" class="nav-menu-icon"><a href="$nav.messages.0" rel="#nav-messages-menu" title="$nav.messages.1"><span class="icon messages">$nav.messages.1</span></a>
+			
+			
+			
+			<li  id="nav-messages-linkmenu" class="nav-menu-icon">
+			  <a href="$nav.messages.0" rel="#nav-messages-menu" title="$nav.messages.1">
+			  <span class="icon messages">$nav.messages.1</span></a>
 				<span id="mail-update" class="nav-notify"></span>
 				<ul id="nav-messages-menu" class="menu-popup">
 					<li id="nav-messages-see-all"><a href="$nav.messages.0">$nav.messages.1</a></li>
