@@ -2,12 +2,30 @@
 	{# $langselector #}
 
 	<div id="site-location">$sitelocation</div>
+<<<<<<< HEAD
 	<div id="banner">$banner</div>
 </header>
 <nav>
 			
 			
 	<ul>
+=======
+	
+</header>
+<nav>
+
+				
+	<ul>
+			
+			<li>
+				<a href="$nav.network.0" id="logo-img">
+				<img alt="logo" src="images/friendika-32.png" id="logo-img"></a>
+			</li>
+			
+			<li id="logo-text">
+				<a href="network">Friendica</a>	
+			</li>	
+>>>>>>> 83f88b0e65094a3c2f534f6edac9eea2bca31e07
 			
 			
 			{{ if $nav.network }}
@@ -116,7 +134,10 @@
 		
 		
 	</ul>
+<<<<<<< HEAD
 	</div>	
+=======
+>>>>>>> 83f88b0e65094a3c2f534f6edac9eea2bca31e07
 
 </nav>
 <ul id="nav-notifications-template" style="display:none;" rel="template">
