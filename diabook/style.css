@@ -354,7 +354,7 @@ h4 {
 }
 
 a {
-	color: #36C;
+	color: #3465A4;
 	/* color: #3e3e8c; */
 	text-decoration: none;
 }
@@ -440,7 +440,7 @@ code {
   float: right;
 }
 .tool a {
-  color: #000;
+  color: ##3F8FBA;
 }
 .tool a:hover {
   text-decoration: none;
@@ -587,8 +587,8 @@ nav .nav-notify {
   font-weight: 900;
   padding: 1px 3px;
   top: 0px;
-  right: -10px;
-  min-width: 15px;
+  right: -6px;
+  min-width: 10px;
   text-align: center;
 }
 nav .nav-notify.show {
@@ -609,6 +609,12 @@ nav #nav-user-linkmenu{
 	}
 nav #nav-home-link{
 	margin-left: 0px;
+	font-weight: bold;
+	}
+nav #nav-directory-link{
+	margin-left: 0px;
+	margin-right: 0px;
+	font-weight: bold;
 	}
 nav #nav-help-link .menu-popup,
 nav #nav-search-link .menu-popup,
@@ -910,6 +916,18 @@ section {
   width: 800px;
   padding: 0px 0px 0px 10px;
 }
+.tabs {
+    background-image: url("../../../view/theme/diabook/icons/head.jpg");
+    background-position: 0 -20px;
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #BABDB6;
+    height: 27px;
+    padding: 0;
+ }
+.tab.button {
+    margin-right: 15px; 
+    margin-left: 15px;	
+	}
 /* wall item */
 .tread-wrapper {
   border-bottom: 1px solid #D2D2D2;
