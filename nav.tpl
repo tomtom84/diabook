@@ -18,7 +18,7 @@
 			</li>
 		    {{ endif }}
 	
-
+			{{ if $nav.contacts }}
 			<li class="nav-menu-icon" id="nav-contacts-linkmenu">
 				<a href="$nav.contacts.0" rel="#nav-contacts-menu" title="$nav.contacts.1">
 				<span class="icon contacts">$nav.contacts.1</span></a>
@@ -28,9 +28,9 @@
 					<li id="nav-contacts-all"><a href="contacts">$nav.contacts.1</a></li> 
 				</ul>
 			</li>	
+			{{ endif }}
 			
-			
-			
+			{{ if $nav.messages }}
 			<li  id="nav-messages-linkmenu" class="nav-menu-icon">
 			  <a href="$nav.messages.0" rel="#nav-messages-menu" title="$nav.messages.1">
 			  <span class="icon messages">$nav.messages.1</span></a>
@@ -42,7 +42,7 @@
 					<li id="nav-messages-new"><a href="message/new">Neue Nachricht</a></li>
 				</ul>
 			</li>		
-		
+			{{ endif }}
 		
       
       {{ if $nav.notifications }}
@@ -70,16 +70,17 @@
 				{{ if $nav.admin }}<li><a class="$nav.admin.2" href="$nav.admin.0" title="$nav.admin.3" >$nav.admin.1</a></li>{{ endif }}
 
 				{{ if $nav.logout }}<li><a class="menu-sep $nav.logout.2" href="$nav.logout.0" title="$nav.logout.3" >$nav.logout.1</a></li>{{ endif }}
-				{{ if $nav.login }}<li><a class="$nav.login.2" href="$nav.login.0" title="$nav.login.3" >$nav.login.1</a><li>{{ endif }}
+
 				
 			</ul>		
 		</li>
 		
 		
-
+		{{ if $nav.directory }}
 		<li id="nav-directory-link" class="nav-menu $sel.directory">
 			<a class="$nav.directory.2" href="$nav.directory.0" title="$nav.directory.3" >$nav.directory.1</a>
 		</li>
+		{{ endif }}
 		
 		{{ if $nav.apps }}
 			<li id="nav-apps-link" class="nav-menu $sel.apps">
@@ -112,6 +113,12 @@
 				</ul>
 			</li>
 		{{ endif }}
+		
+					{{ if $nav.login }}
+					<li id="nav-home-link" class="nav-menu $sel.home">
+						<a class="$nav.login.2" href="$nav.login.0" title="$nav.login.3" >$nav.login.1</a>
+					<li>
+					{{ endif }}
 		
 		
 		
