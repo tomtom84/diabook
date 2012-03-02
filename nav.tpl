@@ -1,5 +1,5 @@
 <header>
-	{# $langselector #}
+	{# $langselector version 0.01#}
 
 	<div id="site-location">$sitelocation</div>
 	<div id="banner">$banner</div>
@@ -44,7 +44,6 @@
 			</li>		
 			{{ endif }}
 		
-      
       {{ if $nav.notifications }}
 			<li  id="nav-notifications-linkmenu" class="nav-menu-icon"><a href="$nav.notifications.0" rel="#nav-notifications-menu" title="$nav.notifications.1"><span class="icon notify">$nav.notifications.1</span></a>
 				<span id="notify-update" class="nav-notify"></span>
@@ -54,9 +53,7 @@
 					<li class="empty">$emptynotifications</li>
 				</ul>
 			</li>		
-		{{ endif }}			
-		
-				
+		{{ endif }}					
 		
 		<li id="nav-site-linkmenu" class="nav-menu-icon"><a href="#" rel="#nav-site-menu"><span class="icon s22 gear">Site</span></a>
 			<ul id="nav-site-menu" class="menu-popup">
@@ -122,12 +119,14 @@
 		
 		
 		
-	</ul>
-	</div>	
+	</ul>	
 
 </nav>
+
+
+
 <ul id="nav-notifications-template" style="display:none;" rel="template">
-	<li><a href="{0}"><img src="{1}">{2} <span class="notif-when">{3}</span></a></li>
+	<li class="{4}"><a href="{0}"><img src="{1}" height="24" width="24" alt="" />{2} <span class="notif-when">{3}</span></a></li>
 </ul>
 
 {#
