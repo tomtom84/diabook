@@ -17,6 +17,13 @@
 				<span id="net-update" class="nav-notify"></span>
 			</li>
 		    {{ endif }}
+		    
+		    {{ if $nav.community }}
+			<li id="nav-community-link" class="nav-menu-icon">
+				<a class="$nav.community.2" href="$nav.community.0" title="$nav.community.3" >
+				<span class="icon community">Benachrichtigungen</span></a>
+			</li>
+		    {{ endif }}
 	
 			{{ if $nav.contacts }}
 			<li class="nav-menu-icon" id="nav-contacts-linkmenu">

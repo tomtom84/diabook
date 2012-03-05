@@ -91,6 +91,8 @@
   background-image: url("../../../view/theme/diabook/icons/notify.png");}
 .icon.messages {
   background-image: url("../../../view/theme/diabook/icons/messages.png");}
+.icon.community {
+  background-image: url("../../../view/theme/diabook/icons/community.png");}
   
 .icon.drop 	{ background-image: url("../../../view/theme/diabook/icons/drop.png");}
 .icon.drophide 	{ background-image: url("../../../view/theme/diabook/icons/drop.png");}
@@ -621,7 +623,7 @@ nav .nav-menu-icon {
   position: relative;
   height: 22px;
   padding: 5px;
-  margin: 0px 12px;
+  margin: 0px 7px;
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
