@@ -528,7 +528,7 @@ header #banner a:hover {
   color: #ffffff;
   text-decoration: none;
   outline: none;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 header #banner #logo-img {
   height: 25px;
@@ -615,8 +615,9 @@ nav #logo-text {
 nav .nav-menu-search {
   position: relative;
   
-  margin: 1px 17px;
+  margin: 3px 17px;
   margin-right: 0px;
+  height: 17px;
 }
 
 nav .nav-menu-icon {
