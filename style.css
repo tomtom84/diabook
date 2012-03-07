@@ -214,6 +214,17 @@
   padding: 1px;
 }
 
+.icon.border.camera{
+  background-image: url("../../../view/theme/diabook/icons/camera.png"); 
+  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
+	}
+	
+.icon.border.link{
+  background-image: url("../../../view/theme/diabook/icons/weblink.png"); 
+  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
+  margin-left: 10px;
+	}
+
 .icon.text {
   text-indent: 0px;
 }
@@ -615,12 +626,20 @@ nav #logo-text {
 }
 nav .nav-menu-search {
   position: relative;
-  
+
   margin: 3px 17px;
   margin-right: 0px;
   height: 17px;
   width: 205px;
+  
 }
+
+nav #search-box #search-text {
+  background-image:  url('icons/lupe.png');
+  background-repeat:no-repeat;
+  padding-left:20px;
+	}
+
 
 nav .nav-menu-icon {
   position: relative;
