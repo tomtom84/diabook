@@ -1059,6 +1059,10 @@ section {
     padding: 3px;
     color:  #333333;
 	}
+	
+#birthday-notice, #event-notice, #birthday-wrapper, #event-wrapper{
+	margin-bottom: 10px;
+	}
 /* wall item */
 .tread-wrapper {
   border-bottom: 1px solid #D2D2D2;
@@ -1940,6 +1944,9 @@ box-shadow: 1px 1px 5px 0;
 #group-members-end {
         clear: both;
 }
+#group-edit-desc {
+ margin-top: 15px;
+}
 
 /*
 #group-separator,
@@ -2147,10 +2154,23 @@ a.mail-list-link {
 #photo-photo {
         float: left;
 }
+#photo-like-div .wall-item-like-buttons {
+	float: left;
+   margin-right: 10px;
+	}
+.wall-item-like-buttons .icon.like {
+float: left;
+}
 
 #photo-photo-end {
         clear: both;
 }
+
+.tabs .comment-wwedit-wrapper {
+	display: block;
+   margin-top: 30px;
+   margin-left: 50px;
+	}
 
 .profile-match-photo {
         float: left;
