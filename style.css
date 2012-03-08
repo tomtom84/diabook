@@ -548,7 +548,8 @@ header #banner #logo-img {
 }
 header #banner #logo-text {
   font-size: 22px;
-  
+  position: absolute;
+  top: 15%;
 }
 /* nav */
 nav {
