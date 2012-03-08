@@ -13,7 +13,8 @@
 				{{ endfor }}
 				<li><a href="profile_photo" >$profile.menu.chg_photo</a></li>
 				<li><a href="profiles/new" id="profile-listing-new-link">$profile.menu.cr_new</a></li>
-				
+				<li><a href="profiles" >$profile.edit.3</a></li>
+								
 			</ul>
 			</div>
 		{{ endif }}
