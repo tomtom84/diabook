@@ -1058,7 +1058,8 @@ body .pageheader{
    padding: 10px;
 	text-align: center;
 	font-size: 1.0em;
-	margin-top: 140%;
+	clear: both;
+	display: block;
 }	
 .tabs {
     
