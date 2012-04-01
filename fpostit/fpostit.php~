@@ -3,7 +3,7 @@ if (!isset($_POST["friendika_acct_name"])) $_POST["friendika_acct_name"] = '';
 if (!isset($_COOKIE['username'])) $_COOKIE['username'] = '';
 if (!isset($_COOKIE['password'])) $_COOKIE['password'] = '';
 if (!isset($hostname)) $hostname = '';
-if (!isset($hostname)) $username = null;
+if (!isset($username)) $username = '';
 
 
 if (($_POST["friendika_acct_name"] != '') && ($_POST["friendika_password"] != '')) {

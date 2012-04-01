@@ -395,7 +395,7 @@
 /* global */
 body {
   font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12.5px;
   background-color: #ffffff;
   color: #2d2d2d;
   margin: 50px auto auto;
@@ -641,6 +641,10 @@ nav #search-box #search-text {
   background-image:  url('icons/lupe.png');
   background-repeat:no-repeat;
   padding-left:20px;
+  border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
 	}
 
 
@@ -877,6 +881,8 @@ ul.menu-popup .empty {
   padding-top: 4px;
   padding-left: 5px;	
   color: #2D2D2D;
+  word-wrap: break-word;
+  width: 130px;
 	}
 #ps-username:hover{
   text-decoration: none;	
@@ -989,6 +995,10 @@ aside #profiles-menu {
 }
 aside #search-text {
 	width: 150px;
+	border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
 }
 aside #side-follow-url {
 	width: 150px;
@@ -1088,6 +1098,32 @@ aside #side-peoplefind-url {
   background: url("../../../view/theme/diabook/icons/selected.png") no-repeat left center;
 }
 /* widget: search */
+span.sbox_l  {
+	background: white url('../../../view/theme/diabook/icons/srch_l.gif') no-repeat top left;
+	float: left;
+	width: 19px; height: 19px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+span.sbox_r  {
+	background: white url('../../../view/theme/diabook/icons/srch_r.gif') no-repeat top left;
+	float: left;
+	width: 19px; height: 19px;
+	margin-top: 5px;
+}
+
+span.sbox input {
+	background: white url('../../../view/theme/diabook/icons/srch_bg.gif') repeat-x top left;
+	float: left;
+	margin-top: 5px;
+	border: 0;
+	height: 13px; width: 100px;
+	padding: 3px;
+	font: 11px/13px arial;
+	color: #000;
+}
 #add-search-popup {
   width: 200px;
   top: 18px;
@@ -1096,7 +1132,7 @@ aside #side-peoplefind-url {
 section {
   display: table-cell;
   vertical-align: top;
-  width: auto;
+  width: 610px;
   padding: 0px 0px 0px 12px;
 }
 
@@ -1149,8 +1185,8 @@ body .pageheader{
 right_aside {
   display: table-cell;
   vertical-align: top;
-  width: 160px;
-  padding-right: 10px;
+  width: 170px;
+  
   /*border-left: 1px solid #D2D2D2;*/
   
   /* background: #F1F1F1; */
@@ -1164,6 +1200,27 @@ right_aside #likes { margin: 0px; padding: 0px; list-style: none; }
 right_aside .items-wrapper{ overflow: auto;	width: 100%; }
 right_aside #lastusers-wrapper { padding-left: 6px; padding-top: 3px; overflow: auto;	width: 100%; }
 right_aside #ra-photos-wrapper { padding-left: 5px; padding-top: 3px; overflow: auto;	width: 100%; }
+#page-sidebar-right_aside{margin-top: 0px; margin-bottom: 30px;}
+#page-sidebar-right_aside ul {margin-top: 0px;}
+#page-sidebar-right_aside .label {max-width: 128px;}
+right_aside .icon {width: 10px; height: 10px;}
+.close_box		{ 
+		background-image: url("../../../view/theme/diabook-blue/icons/close_box.png");
+		float: right;
+		cursor: pointer;
+		opacity: 0.1;
+		}
+.close_box:hover	{ 
+		background-image: url("../../../view/theme/diabook-blue/icons/close_box.png");
+		float: right;
+		cursor: pointer;
+		opacity: 1;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+		}
 /* wall item */
 .tread-wrapper {
   border-bottom: 1px solid #D2D2D2;
@@ -1188,6 +1245,7 @@ right_aside #ra-photos-wrapper { padding-left: 5px; padding-top: 3px; overflow: 
 .wall-item-container .wall-item-item, .wall-item-container .wall-item-bottom {
   display: table-row;
 }
+
 .wall-item-bottom {
   font-size: 13px;
 }
@@ -1232,14 +1290,14 @@ right_aside #ra-photos-wrapper { padding-left: 5px; padding-top: 3px; overflow: 
 }
 
 .wall-item-container .wall-item-content {
-  font-size: 13px;
+  font-size: 12.5px;
   max-width: 420px;
   word-wrap: break-word;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .wall-item-container .wall-item-content img {
-  max-width: 500px;
+  max-width: 400px;
 }
 .wall-item-container .wall-item-links, .wall-item-container .wall-item-actions {
   display: table-cell;

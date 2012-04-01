@@ -102,6 +102,7 @@
 .icon.recycle 	{ background-image: url("../../../view/theme/diabook/icons/recycle.png");}
 .icon.remote-link { background-image: url("../../../view/theme/diabook/icons/remote.png");}
 .icon.tagged    { background-image: url("../../../view/theme/diabook/icons/tagged.png");}  
+.icon.file-as { background-image: url("../../../view/theme/diabook/icons/file_as.png");}
 .star-item.icon.unstarred { background-image: url("../../../view/theme/diabook/icons/unstarred.png");}
 .star-item.icon.starred { background-image: url("../../../view/theme/diabook/icons/starred.png");}
 .icon.link		{ background-image: url("../../../view/theme/diabook/icons/link.png");}
@@ -384,7 +385,7 @@
 .hide-comments-outer {
   margin-left: 80px;
   margin-bottom: 5px;
-  width: 684px;
+  width: 484px;
   border-bottom: 1px solid #BDCDD4;
   border-top: 1px solid #BDCDD4;
 
@@ -928,25 +929,20 @@ ul.menu-popup .empty {
 .menu-profile-list.com_side{
 	background: url("../../../view/theme/diabook-blue/icons/com_side.png") no-repeat;
 	}
-.menu-profile-list.pscontacts{
-	background: url("../../../view/theme/diabook/icons/pscontacts.png") no-repeat;
-	}
 
 /* aside */
 aside {
   display: table-cell;
   vertical-align: top;
-  width: 180px;
-  padding: 0px 10px 0px 20px;
+  width: 200px;
+  padding: 0px 10px 0px 10px;
   border-right: 1px solid #D2D2D2;
   float: left;
   /* background: #F1F1F1; */
 }
 
-aside .vcard .fn {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
+aside .vcard  {
+  display: none;
 }
 aside .vcard .title {
   margin-bottom: 5px;
@@ -996,17 +992,20 @@ aside #profiles-menu {
   width: 20em;
 }
 aside #search-text {
-	width: 173px;
+	width: 150px;
+	border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
 }
 aside #side-follow-url {
-	width: 173px;
+	width: 150px;
 	}
 aside #side-peoplefind-url {
-	width: 173px;
+	width: 150px;
 	}
 #contact-block {
-  overflow: auto;
-  height: auto;
+  display: none;
 }
 #contact-block .contact-block-h4 {
   float: left;
@@ -1026,8 +1025,8 @@ aside #side-peoplefind-url {
   margin: 0px 2px 2px 0px;
 }
 #contact-block .contact-block-link img {
-  widht: 55px;
-  height: 55px;
+  widht: 48px;
+  height: 48px;
 }
 #lost-password-link {
   float: left;
@@ -1096,6 +1095,32 @@ aside #side-peoplefind-url {
   background: url("../../../view/theme/diabook/icons/selected.png") no-repeat left center;
 }
 /* widget: search */
+span.sbox_l  {
+	background: white url('../../../view/theme/diabook/icons/srch_l.gif') no-repeat top left;
+	float: left;
+	width: 19px; height: 19px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+span.sbox_r  {
+	background: white url('../../../view/theme/diabook/icons/srch_r.gif') no-repeat top left;
+	float: left;
+	width: 19px; height: 19px;
+	margin-top: 5px;
+}
+
+span.sbox input {
+	background: white url('../../../view/theme/diabook/icons/srch_bg.gif') repeat-x top left;
+	float: left;
+	margin-top: 5px;
+	border: 0;
+	height: 13px; width: 100px;
+	padding: 3px;
+	font: 11px/13px arial;
+	color: #000;
+}
 #add-search-popup {
   width: 200px;
   top: 18px;
@@ -1104,8 +1129,8 @@ aside #side-peoplefind-url {
 section {
   display: table-cell;
   vertical-align: top;
-  width: 800px;
-  padding: 0px 0px 0px 12px;
+  width: 650px;
+  padding: 0px 0px 0px 20px;
 }
 
 body .pageheader{
@@ -1132,141 +1157,75 @@ body .pageheader{
 	clear: both;
 	display: block;
 }	
-.tabs {
+.tabs {display: none;}
+.tab.button{display: none;}
+.rs_tabs {
     
     background-position: 0 -20px;
     background-repeat: repeat-x;
     height: 27px;
     padding: 0;
  }
-.tab.button {
-    margin-right: 5px; 
-    margin-left: 5px;	
+.rs_tab.button {	
     /*background: none repeat scroll 0 0 #F8F8F8;*/
     border: 1px solid #CCCCCC;
     border-radius: 3px 3px 3px 3px;
-    font-weight: normal;
+    font-weight: bolder;
     padding: 3px;
     color:  #333333;
+    text-decoration: none;
 	}
 	
 #birthday-notice, #event-notice, #birthday-wrapper, #event-wrapper{
 	margin-bottom: 10px;
 	}
+
+right_aside {
+  display: table-cell;
+  vertical-align: top;
+  width: 170px;
+  
+  /*border-left: 1px solid #D2D2D2;*/
+  
+  /* background: #F1F1F1; */
+}
+right_aside h3 {border-bottom: 1px solid #D2D2D2; padding-top: 5px; padding-bottom: 0px; padding-left: 5px; margin-bottom: 0px; 
+margin-top:30px;}
+right_aside .directory-item {	width: 50px; height: 50px; vertical-align: center; text-align: center; }
+right_aside .directory-photo { margin: 0px; }
+right_aside .directory-photo-img { max-width: 45px; max-height: 45px; }
+right_aside #likes { margin: 0px; padding: 0px; list-style: none; }
+right_aside .items-wrapper{ overflow: auto;	width: 100%; }
+right_aside #lastusers-wrapper { padding-left: 6px; padding-top: 3px; overflow: auto;	width: 100%; }
+right_aside #ra-photos-wrapper { padding-left: 5px; padding-top: 3px; overflow: auto;	width: 100%; }
+#page-sidebar-right_aside{margin-top: 0px; margin-bottom: 30px;}
+#page-sidebar-right_aside ul {margin-top: 0px;}
+#page-sidebar-right_aside .label {max-width: 128px;}
+right_aside .icon {width: 10px; height: 10px;}
+.close_box		{ 
+		background-image: url("../../../view/theme/diabook-blue/icons/close_box.png");
+		float: right;
+		cursor: pointer;
+		opacity: 0.1;
+		}
+.close_box:hover	{ 
+		background-image: url("../../../view/theme/diabook-blue/icons/close_box.png");
+		float: right;
+		cursor: pointer;
+		opacity: 1;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+		}
 /* wall item */
 .tread-wrapper {
   border-bottom: 1px solid #D2D2D2;
   position: relative;
   padding: 5px;
   margin-bottom: 0px;
-  width: 775px;
-}
-.wall-item-content-wrapper {
-	margin-top: 10px;
-	border: 1px solid #CCC;
-	position: relative;
-	-moz-border-radius: 3px;
-	border-radius: 3px;	
-
-}
-.wall-item-info {
-	display: block;
-	float: left;
-	width:110px;
-	margin-right:10px;
-}
-.wall-item-photo-wrapper {
-	margin-top: 10px;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	width: 100px;
-}
-.wall-item-photo {
-	border: none;
-}
-.wall-item-photo-menu-button {
-	display: block;
-	position: absolute;
-	background-image: url("photo-menu.jpg");
-	background-position: top left; 
-	background-repeat: no-repeat;
-	margin: 0px; padding: 0px;
-	width: 16px;
-	height: 16px;
-	top: 74px; left:10px;
-	overflow: hidden;
-	text-indent: 40px;
-	display: none;
-	
-}
-.wall-item-photo-menu {
-	width: auto;
-	border: 2px solid #444444;
-	background: #FFFFFF;
-	position: absolute;
-	left: 10px; top: 90px;
-	display: none;
-	z-index: 10000;
-}
-.wall-item-photo-menu ul { margin:0px; padding: 0px; list-style: none }
-.wall-item-photo-menu li a { display: block; padding: 2px; }
-.wall-item-photo-menu li a:hover { color: #FFFFFF; background: #3465A4; text-decoration: none; }
-.wall-item-wrapper {
-	/*float: left;
-    margin-right: 5px;
-    width: 250px;*/
-    margin-left:10px;
-}
-.wall-item-location {
-	overflow: hidden;
-	/* add ellipsis on text overflow               */
-	/* this work on safari, opera, ie, chrome.     */
-	/* firefox users have to wait support or we    */
-	/* can use a jquery plugin http://bit.ly/zJskg */
-	text-overflow: ellipsis;
-	-o-text-overflow: ellipsis;
-	width: 100%;
-}
-.wall-item-author {
-	margin-top: 10px;
-}
-.wall-item-name-link {
-	font-weight: bold;
-	text-decoration: none;
-	color: #3172BD;
-}
-.wall-item-content {
-	/*float: left;*/
-	/*width: 450px;*/
-	margin-left: 10px;
-	/*margin-bottom: 20px;*/
-	/*padding: 20px;*/
-	max-height: 400px;
-	overflow: auto;
-}
-.wall-item-title {
-	float: left;
-	font-weight: bold;
-	/*width: 450px;*/
-}
-
-.wall-item-title-end {
-	clear: both;
-}
-.wall-item-body {
-	float: left;
-	/*width: 450px;*/
-	margin-top: 10px;
-}
-.wall-item-tools {
-	clear: both;
-	background-image: url("head.jpg");
-    background-position: 0 -20px;
-    background-repeat: repeat-x;
-   	padding: 5px 10px 0px;
-}
-.wall-item-wrapper-end {
-	clear: both;
+  width: 575px;
 }
 .wall-item-decor {
   position: absolute;
@@ -1277,13 +1236,14 @@ body .pageheader{
 
 .wall-item-container {
   display: table;
-  width: 780px;
+  width: 580px;
 }
 
 
 .wall-item-container .wall-item-item, .wall-item-container .wall-item-bottom {
   display: table-row;
 }
+
 .wall-item-bottom {
   font-size: 13px;
 }
@@ -1329,13 +1289,13 @@ body .pageheader{
 
 .wall-item-container .wall-item-content {
   font-size: 12.5px;
-  max-width: 720px;
+  max-width: 420px;
   word-wrap: break-word;
   line-height: 1.2;
 }
 
 .wall-item-container .wall-item-content img {
-  max-width: 700px;
+  max-width: 400px;
 }
 .wall-item-container .wall-item-links, .wall-item-container .wall-item-actions {
   display: table-cell;
@@ -1390,7 +1350,7 @@ body .pageheader{
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 80px;
-  width: 700px;
+  width: 500px;
   border-bottom: 1px solid hsl(198, 21%, 79%);
 }
 .wall-item-container.comment .contact-photo {
@@ -1565,7 +1525,7 @@ body .pageheader{
   display: none;
 }
 #jot {
-  width: 785px;
+  width: 585px;
   margin: 0px 2em 20px 0px;
 }
 #profile-jot-form #profile-jot-text {
@@ -1582,7 +1542,7 @@ body .pageheader{
   padding: 0px;
   height: 40px;
   overflow: none;
-  width: 783px;
+  width: 583px;
   background-color: #fff;
   border-bottom: 2px solid #9eabb0;
 }
@@ -1671,7 +1631,7 @@ body .pageheader{
   font-weight: normal;
 }
 #profile-jot-form #profile-jot-text_parent #profile-jot-text_tbl{
-	width: 785px;
+	width: 585px;
 	height: 100px;
 	}
 #jot #jot-title:hover {
@@ -1706,12 +1666,12 @@ body .pageheader{
 }
 #profile-jot-wrapper{
 	margin: 0 2em 20px 0;
-   width: 785px;
+   width: 585px;
 	}
 
 #profile-jot-submit-wrapper {
 	margin-bottom: 50px;
-	width: 785px;
+	width: 585px;
 }
 
 #profile-jot-submit {
@@ -1906,22 +1866,23 @@ body .pageheader{
 }
 /** /acl **/
 /** tab buttons **/
-ul.tabs {
+ul.rs_tabs {
   list-style-type: none;
-  padding-bottom: 10px;
-  font-size: 13px;
+
+  font-size: 11px;
 }
-ul.tabs li {
+ul.rs_tabs li {
   float: left;
-  margin-left: 5px;
+  margin-bottom: 30px;
+  clear: both;
 }
-ul.tabs li .active {
-    background-color: #333333;
+ul.rs_tabs li .active {
+    background-color: #333;
     border: 1px solid #777777;
     color: white;
     border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 1px 1px #CFCFCF;
-    margin-left: 5px;
+    box-shadow: 2px 2px 2px #CFCFCF;
+    font-size: 13px;
 }
 /**
  * Form fields
@@ -2123,8 +2084,8 @@ box-shadow: 1px 1px 5px 0;
 /* ================== */
 
 .contact-block-img {
-        width: 55px;
-        height: 55px;
+        width: 48px;
+        height: 48px;
         padding-right: 3px;
 }
 .contact-block-div {
