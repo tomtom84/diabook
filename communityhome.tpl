@@ -17,7 +17,7 @@
 <div id="close_services">
 {{ if $lastusers_title }}
 <h3>$con_services.title.1<a id="close_services_icon" onClick="close_services()" class="icon close_box" title="close"></a></h3>
-<div id="right_service_icons" style="margin-left: 11px; margin-top: 5px;">
+<div id="right_service_icons" style="margin-left: 16px; margin-top: 5px;">
 <a href="$url/facebook"><img alt="Facebook" src="view/theme/diabook/icons/facebook.png" title="Facebook"></a>
 <a href="$url/settings/connectors"><img alt="StatusNet" src="view/theme/diabook/icons/StatusNet.png?" title="StatusNet"></a>
 <a href="$url/settings/connectors"><img alt="LiveJournal" src="view/theme/diabook/icons/livejournal.png?" title="LiveJournal"></a>

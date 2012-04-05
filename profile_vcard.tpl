@@ -8,7 +8,7 @@
 			<ul id="profiles-menu" class="menu-popup">
 				{{ for $profile.menu.entries as $e }}
 				<li>
-					<a href="profiles/$e.id"><img src='$e.photo'>$e.profile_name</a>
+					<a href="profiles/$e.id"><img src='$e.photo' style="height: 140px;width: 140px;>$e.profile_name</a>
 				</li>
 				{{ endfor }}
 				<li><a href="profile_photo" >$profile.menu.chg_photo</a></li>

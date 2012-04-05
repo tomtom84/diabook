@@ -1,8 +1,8 @@
 <?php
 
 /*
- * Name: diabooked
- * Description: diabooked: report bugs and request here: http://pad.toktan.org/p/diabooked or contact me : thomas_bierey@friendica.eu
+ * Name: Diabook
+ * Description: Diabook: report bugs and request here: http://pad.toktan.org/p/diabook or contact me : thomas_bierey@friendica.eu
  * Version: (Version: 1.012)
  * Author: 
  */
@@ -19,7 +19,7 @@ $cssFile = null;
 
 
  
-function diabooked_community_info(){
+function diabook_community_info(){
 	$a = get_app();
 	//right_aside at networkpages
 
@@ -132,7 +132,7 @@ function diabooked_community_info(){
 	}
 	
 	$fostitJS = "javascript: (function() {
-    					the_url = '".$a->get_baseurl($ssl_state)."/view/theme/diabooked/fpostit/fpostit.php?url=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent(document.title) + '&text=' + encodeURIComponent(''+(window.getSelection ? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text));
+    					the_url = '".$a->get_baseurl($ssl_state)."/view/theme/diabook/fpostit/fpostit.php?url=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent(document.title) + '&text=' + encodeURIComponent(''+(window.getSelection ? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text));
     						a_funct = function() {
         						if (!window.open(the_url, 'fpostit', 'location=yes,links=no,scrollbars=no,toolbar=no,width=600,height=300')) location.href = the_url};
     							if (/Firefox/.test(navigator.userAgent)) {setTimeout(a_funct, 0)} 
@@ -215,7 +215,7 @@ function diabooked_community_info(){
 	$aside['$postit'] = $postit;
    //end postit
   
-   //get_baseurl   
+   //get_baseurl
    $url = $a->get_baseurl($ssl_state);   
    $aside['$url'] = $url;
 
@@ -263,10 +263,10 @@ if ($a->argv[0] === "network" && local_user()){
 	
 	if($ccCookie != "8") {
 	// COMMUNITY
-	diabooked_community_info();
+	diabook_community_info();
 	
 	// CUSTOM CSS
-	$cssFile = $a->get_baseurl($ssl_state)."/view/theme/diabooked/style-network.css";
+	$cssFile = $a->get_baseurl($ssl_state)."/view/theme/diabook/style-network.css";
 	}
 }
 
@@ -276,16 +276,16 @@ if ($a->argv[0] === "network" && local_user()){
 if ($a->argv[0].$a->argv[1] === "profile".$a->user['nickname']){
 	if($ccCookie != "8") {
 	// COMMUNITY
-	diabooked_community_info();
+	diabook_community_info();
 	
 	// CUSTOM CSS
-	$cssFile = $a->get_baseurl($ssl_state)."/view/theme/diabooked/style-profile.css";
+	$cssFile = $a->get_baseurl($ssl_state)."/view/theme/diabook/style-profile.css";
 	
 	
 	}
 }
 
-//tabs at right_aside on settings page
+//tabs at aside on settings page
 if ($a->argv[0] === "settings"){
 	
 	$tabs = array(
@@ -331,7 +331,7 @@ if ($a->argv[0] === "settings"){
 	
 	
 	// CUSTOM CSS
-	$cssFile = $a->get_baseurl($ssl_state)."/view/theme/diabooked/style-settings.css";
+	$cssFile = $a->get_baseurl($ssl_state)."/view/theme/diabook/style-settings.css";
 	
 }
 
@@ -339,7 +339,7 @@ if ($a->argv[0] === "settings"){
 if (!is_null($cssFile)) $a->page['htmlhead'] .= sprintf('<link rel="stylesheet" type="text/css" href="%s" />', $cssFile);
 
 //load jquery.cookie.js
-$cookieJS = $a->get_baseurl($ssl_state)."/view/theme/diabooked-blue/js/jquery.cookie.js";
+$cookieJS = $a->get_baseurl($ssl_state)."/view/theme/diabook-blue/js/jquery.cookie.js";
 $a->page['htmlhead'] .= sprintf('<script language="JavaScript" src="%s" ></script>', $cookieJS);
 
 //js scripts
@@ -350,6 +350,12 @@ $a->page['htmlhead'] .= '
  $(function() {
 	$("a.lightbox").fancybox(); // Select all links with lightbox class
  });
+ 
+ $(document).ready(function (){
+	$("iframe").each(function(){
+		var url = $(this).attr("src");
+		$(this).attr("src",url+"?wmode=transparent"); });
+    });
   
  </script>';
 

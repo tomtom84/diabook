@@ -392,21 +392,6 @@
 }
 
 /* global */
-html {
-background-image: linear-gradient(bottom, rgb(224,224,224) 49%, rgb(245,245,245) 100%);
-background-image: -o-linear-gradient(bottom, rgb(224,224,224) 49%, rgb(245,245,245) 100%);
-background-image: -moz-linear-gradient(bottom, rgb(224,224,224) 49%, rgb(245,245,245) 100%);
-background-image: -webkit-linear-gradient(bottom, rgb(224,224,224) 49%, rgb(245,245,245) 100%);
-background-image: -ms-linear-gradient(bottom, rgb(224,224,224) 49%, rgb(245,245,245) 100%);
-
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.49, rgb(224,224,224)),
-	color-stop(1, rgb(245,245,245))
-);
-	}
 body {
   font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12.5px;
@@ -414,19 +399,6 @@ body {
   color: #2d2d2d;
   margin: 50px auto auto;
   display: table;
- background-image: linear-gradient(bottom, rgb(224,224,224) 49%, rgb(245,245,245) 100%);
-background-image: -o-linear-gradient(bottom, rgb(224,224,224) 49%, rgb(245,245,245) 100%);
-background-image: -moz-linear-gradient(bottom, rgb(224,224,224) 49%, rgb(245,245,245) 100%);
-background-image: -webkit-linear-gradient(bottom, rgb(224,224,224) 49%, rgb(245,245,245) 100%);
-background-image: -ms-linear-gradient(bottom, rgb(224,224,224) 49%, rgb(245,245,245) 100%);
-
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.49, rgb(224,224,224)),
-	color-stop(1, rgb(245,245,245))
-);
 }
 
 h4 {
@@ -570,15 +542,17 @@ header #banner a:hover {
   text-decoration: none;
   outline: none;
   vertical-align: middle;
+ font-weight: bolder;
+  margin-left: 3px;
 }
 header #banner #logo-img {
   height: 25px;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 header #banner #logo-text {
-  font-size: 22px;
+  font-size: 20px;
   position: absolute;
-  top: 15%;
+  top: 10%;
 }
 /* messages */
 #message-new {
@@ -737,7 +711,7 @@ nav #logo-text {
 nav .nav-menu-search {
   position: relative;
 
-  margin: 3px 17px;
+  margin: 4px 17px;
   margin-right: 0px;
   height: 17px;
   width: 180px;
@@ -1104,7 +1078,13 @@ aside #profiles-menu {
   width: 20em;
 }
 aside #search-text {
-	width: 173px;
+	width: 150px;
+	height: 17px;
+	padding-left: 10px;
+	border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
 }
 aside #side-follow-url {
 	width: 173px;
@@ -1312,16 +1292,11 @@ body .pageheader{
   display: table-cell;
   vertical-align: top;
   text-align: left;
-  width: 60px;
+  width: 80px;
 }
 .wall-item-container .wall-item-location {
   padding-right: 40px;
   display: table-cell;
-  background-color: #FFFF9F;
-  padding-left: 10px;
-  margin-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 6px;
 }
 .wall-item-container .wall-item-ago {
   word-wrap: break-word;
@@ -1342,11 +1317,6 @@ body .pageheader{
   max-width: 720px;
   word-wrap: break-word;
   line-height: 1.2;
-  padding: 10px;
-  background-color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-
 }
 
 .wall-item-container .wall-item-content img {
@@ -1376,21 +1346,13 @@ body .pageheader{
   font-weight: bold;
 }
 .wall-item-container .wall-item-actions-author {
-  padding: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: white;
-  
+  width: 100%;
+  margin-bottom: 0.3em;
 }
 .wall-item-container .wall-item-actions-social {
   float: left;
   margin-bottom: 1px;
   display: table-cell;
-  background-color: #FFFF9F;
-  padding-left: 10px;
-  border-bottom-left-radius: 10px;
-  margin-left: 10px;
-  padding-top: 5px;
 }
 .wall-item-container .wall-item-actions-social a {
   margin-right: 1em;
@@ -1402,12 +1364,6 @@ body .pageheader{
   float: right;
   width: 80px;
   display: table-cell;
-  background-color: #FFFF9F;
-  padding-right: 10px;
-  margin-right: 10px;
-  padding-top: 5px;
-  border-bottom-right-radius: 10px;
-  padding-left: 17px;
 }
 .wall-item-container .wall-item-actions-tools a {
   float: right;
@@ -1751,7 +1707,7 @@ body .pageheader{
 #profile-jot-submit {
 	float: right;
 	margin-top: 2px;
-	
+	font-size: 14px;
 }
 #profile-upload-wrapper {
 	float: left;
@@ -1803,7 +1759,9 @@ body .pageheader{
 	float: right;
 	margin-left: 10px;
 	margin-top: 2px;
-	font-size: 10px;
+	font-size: 9px;
+	font-weight: bolder;
+	cursor: pointer;
 }
 #profile-jot-perms{
    float: right;
@@ -1814,9 +1772,10 @@ body .pageheader{
 .button.creation1 {
     background-color: #fff;
     border: 1px solid #777777;
-    background-image: -moz-linear-gradient(center top , white 0%, #DDDDDD 100%);
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 1px 1px #CFCFCF;
+    cursor: pointer;
+    font-weight: bolder;
 }
 .button.creation2 {
     background-color: #33ACFF;
@@ -1826,6 +1785,8 @@ body .pageheader{
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 1px 1px #CFCFCF;
     margin-left: 5px;
+    cursor: pointer;
+    font-weight: bolder;
 }
 /*input[type="submit"] {
 	border: 0px;
@@ -2084,7 +2045,9 @@ height: 350px;
 }
 /* photo */
 .photo {
-border-radius: 15px;	
+border-radius: 10px;	
+height: 140px;
+width: 140px;
 	}
 .lframe {
   float: left;
