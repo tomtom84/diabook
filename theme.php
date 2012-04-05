@@ -3,7 +3,7 @@
 /*
  * Name: Diabook
  * Description: Diabook: report bugs and request here: http://pad.toktan.org/p/diabook or contact me : thomas_bierey@friendica.eu
- * Version: (Version: 1.012)
+ * Version: (Version: 1.013)
  * Author: 
  */
 
@@ -339,8 +339,11 @@ if ($a->argv[0] === "settings"){
 if (!is_null($cssFile)) $a->page['htmlhead'] .= sprintf('<link rel="stylesheet" type="text/css" href="%s" />', $cssFile);
 
 //load jquery.cookie.js
-$cookieJS = $a->get_baseurl($ssl_state)."/view/theme/diabook-blue/js/jquery.cookie.js";
+$cookieJS = $a->get_baseurl($ssl_state)."/view/theme/diabook/js/jquery.cookie.js";
 $a->page['htmlhead'] .= sprintf('<script language="JavaScript" src="%s" ></script>', $cookieJS);
+//load add_notification.js
+$addNotifyJS = $a->get_baseurl($ssl_state)."/view/theme/diabook/js/add_notification.js";
+$a->page['htmlhead'] .= sprintf('<script language="JavaScript" src="%s" ></script>', $addNotifyJS);
 
 //js scripts
 
@@ -353,25 +356,6 @@ $a->page['htmlhead'] .= '
    
  </script>';
  
-$a->page['htmlhead'] .= '
-
-<script>
- $("nav").bind("nav-update", function(e,data){;
- var intro = $(data).find("intro").text();
- if(intro == 0) { intro = "";  $("#intro-update-li").removeClass("show") } else { $("#intro-update-li").addClass("show") }
- $("#intro-update-li").html(intro);
- 
- var mail = $(data).find("mail").text();
- if(mail == 0) { mail = "";  $("#mail-update-li").removeClass("show") } else { $("#mail-update-li").addClass("show") }
- $("#mail-update-li").html(mail);
- 
- var home = $(data).find("home").text();
- if(home == 0) { home = "";  $("#mail-update-li").removeClass("show") } else { $("#mail-update-li").addClass("show") }
- $("#mail-update-li").html(home);
-   
- });
- </script>';
-
 
 if ($a->argv[0].$a->argv[1] === "profile".$a->user['nickname'] or $a->argv[0] === "network" && local_user()){
 $a->page['htmlhead'] .= '
