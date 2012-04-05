@@ -2046,8 +2046,8 @@ height: 350px;
 /* photo */
 .photo {
 border-radius: 10px;	
-height: 140px;
-width: 140px;
+height: 145px !important;
+width: 145px !important;
 	}
 .lframe {
   float: left;

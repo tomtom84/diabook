@@ -22,7 +22,7 @@
 				
 	
 
-	<div id="profile-photo-wrapper"><img class="photo" style="height: 140px;width: 140px;" src="$profile.photo?rev=$profile.picdate" alt="$profile.name" /></div>
+	<div id="profile-photo-wrapper"><img class="photo" src="$profile.photo?rev=$profile.picdate" alt="$profile.name" /></div>
 	{{ if $pdesc }}<div class="title">$profile.pdesc</div>{{ endif }}
 
 
