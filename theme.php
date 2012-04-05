@@ -350,13 +350,26 @@ $a->page['htmlhead'] .= '
  $(function() {
 	$("a.lightbox").fancybox(); // Select all links with lightbox class
  });
+   
+ </script>';
  
- $(document).ready(function (){
-	$("iframe").each(function(){
-		var url = $(this).attr("src");
-		$(this).attr("src",url+"?wmode=transparent"); });
-    });
-  
+$a->page['htmlhead'] .= '
+
+<script>
+ $("nav").bind("nav-update", function(e,data){;
+ var intro = $(data).find("intro").text();
+ if(intro == 0) { intro = "";  $("#intro-update-li").removeClass("show") } else { $("#intro-update-li").addClass("show") }
+ $("#intro-update-li").html(intro);
+ 
+ var mail = $(data).find("mail").text();
+ if(mail == 0) { mail = "";  $("#mail-update-li").removeClass("show") } else { $("#mail-update-li").addClass("show") }
+ $("#mail-update-li").html(mail);
+ 
+ var home = $(data).find("home").text();
+ if(home == 0) { home = "";  $("#mail-update-li").removeClass("show") } else { $("#mail-update-li").addClass("show") }
+ $("#mail-update-li").html(home);
+   
+ });
  </script>';
 
 
