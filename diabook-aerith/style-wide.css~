@@ -21,6 +21,7 @@
 
 .admin.linklist {
         border: 0px; padding: 0px;
+        list-style: none;
 }
 
 .admin.link {
@@ -150,7 +151,7 @@
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
 			  }	
 .video 	{ background-image: url("../../../view/theme/diabook/diabook-aerith/icons/video.png"); 
-			  display: block; width: 100%; height: 28px; background-repeat: no-repeat;
+			  display: block; width: 100%; height: 140px; background-repeat: no-repeat;
 			  }
 .audio2 	{ background-image: url("../../../view/theme/diabook/diabook-aerith/icons/audio.png"); 
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
@@ -620,9 +621,7 @@ header #banner #logo-img {
   margin-top: 3px;
 }
 header #banner #logo-text {
-  font-size: 20px;
-  position: absolute;
-  top: 10%;
+  font-size: 20px!important;position: relative!important;top: -4px!important;
 }
 /* messages */
 #message-new {
@@ -1014,7 +1013,7 @@ ul.menu-popup .empty {
   background-color: #bdcdd4;
 }
 #nav-notifications-menu {
-  width: 400px;
+  width: 425px !important;
   max-height: 550px;
   overflow: auto;
 }
@@ -1243,7 +1242,14 @@ aside #likes a:hover{
   margin-right: 20px;		
 	}
 #login-submit-wrapper{
-margin-bottom: 15px;
+
+  margin-bottom: 12px;
+	}
+aside #login-submit-button{
+  margin-left: 0px!important;	
+	}
+aside #login-extra-links{
+  padding-top: 0px!important;	
 	}
 .group_selected {
   background: url("../../../view/theme/diabook/icons/selected.png") no-repeat left center;
@@ -1624,7 +1630,7 @@ body .pageheader{
   max-width: 690px;
   word-wrap: break-word;
 
-  margin-bottom: 14px;
+
 }
 
 .wall-item-container .wall-item-content img {
