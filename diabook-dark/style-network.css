@@ -387,7 +387,7 @@
   margin-bottom: 1px;
   width: 484px;
   border-bottom: 1px solid #BDCDD4;
-  background-color: #fff;
+  background-color: #2e2e2f;
   padding: 8px;
 }
 
@@ -439,7 +439,7 @@ a:hover {
   clear: both;
 }
 .fakelink {
-  color: #1872A2;
+  color: #88a9d2;
   /* color: #3e3e8c; */
   text-decoration: none;
   cursor: pointer;
@@ -464,7 +464,7 @@ code {
   position: absolute;
   width: 12em;
   background: #2e2f2e;
-  color: #2e2f2e;
+  color: #eec;
   margin: 0px;
   padding: 1em;
   list-style: none;
@@ -493,7 +493,7 @@ code {
   float: right;
 }
 .tool a {
-  color: ##3F8FBA;
+  color: #88a9d2;
 }
 .tool a:hover {
   text-decoration: none;
@@ -522,9 +522,6 @@ header {
   background: #1d1f1d;
   background-color: #1d1f1d;
   z-index: 100;
-  border-bottom: 1px;
-  border-bottom-color: black;
-  border-bottom-style: inset;
 }
 header #site-location {
   display: none;
@@ -540,7 +537,7 @@ header #banner a:active,
 header #banner a:visited,
 header #banner a:link,
 header #banner a:hover {
-  color: #2e2f2e;
+  color: #eec;
   text-decoration: none;
   outline: none;
   vertical-align: middle;
@@ -567,9 +564,7 @@ nav {
   background: #1d1f1d;
   color: #2e2f2e;
   z-index: 99;
-  border-bottom: 1px;
-  border-bottom-color: black;
-  border-bottom-style: inset;
+ 
 }
 nav a,
 nav a:active,
@@ -672,7 +667,7 @@ nav .nav-menu-icon:hover {
 }
 
 nav .nav-menu-icon.selected {
-  background-color: #fff;
+  background-color: #308dbf;
 }
 nav .nav-menu-icon img {
   width: 22px;
@@ -776,7 +771,7 @@ nav #nav-apps-link.selected {
 }
 
 .notify-seen {
-	background: none repeat scroll 0 0 #DDDDDD;
+	background: none repeat scroll 0 0 #666;
 	}
 
 ul.menu-popup {
@@ -836,7 +831,7 @@ ul.menu-popup .empty {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 }
 .acpopupitem {
-  color: #2e2f2e;
+  color: #eec;
   padding: 4px;
   clear: left;
 }
@@ -966,7 +961,7 @@ aside {
   vertical-align: top;
   width: 160px;
   padding: 0px 10px 0px 10px;
-  border-right: 1px solid #D2D2D2;
+  border-right: 1px solid #eec;
   float: left;
   /* background: #F1F1F1; */
 }
@@ -1145,7 +1140,7 @@ list-style-type: disc;
 }
 /* widget: search */
 span.sbox_l  {
-	background: white url('../diabook-dark/icons/srch_l.gif') no-repeat top left;
+	background: white url('../diabook/icons/srch_l.gif') no-repeat top left;
 	float: left;
 	width: 19px; height: 19px;
 	margin-left: 10px;
@@ -1154,14 +1149,14 @@ span.sbox_l  {
 }
 
 span.sbox_r  {
-	background: white url('../diabook-dark/icons/srch_r.gif') no-repeat top left;
+	background: white url('../diabook/icons/srch_r.gif') no-repeat top left;
 	float: left;
 	width: 19px; height: 19px;
 	margin-top: 5px;
 }
 
 span.sbox input {
-	background: white url('../diabook-dark/icons/srch_bg.gif') repeat-x top left;
+	background: white url('../diabook/icons/srch_bg.gif') repeat-x top left;
 	float: left;
 	margin-top: 5px;
 	border: 0;
@@ -1241,7 +1236,7 @@ right_aside {
   
   /* background: #F1F1F1; */
 }
-right_aside a{color: #1872A2;}
+right_aside a{color: #88a9d2;}
 right_aside h3 {border-bottom: 1px solid #D2D2D2; padding-top: 5px; padding-bottom: 0px; padding-left: 9px; margin-bottom: 0px; 
 margin-top:30px;}
 right_aside .directory-item {	width: 50px; height: 50px; vertical-align: center; text-align: center; }
@@ -1283,7 +1278,7 @@ transition: all 0.2s ease-in-out;
   padding-top: 10px;
 }
 .tread-wrapper a{
-  color: #1872A2;
+  color: #88a9d2;
 }
 
 .wall-item-decor {
@@ -1431,7 +1426,7 @@ transition: all 0.2s ease-in-out;
 
 .wall-item-comment-wrapper {
   margin: 1px 5px 5px 80px;
-  background-color: #fff;
+  background-color: #444;
   width: 500px;
 }
 .wall-item-comment-wrapper .comment-edit-photo {
@@ -1439,17 +1434,18 @@ transition: all 0.2s ease-in-out;
 }
 .wall-item-comment-wrapper textarea {
   height: 2.0em;
-  width: 100%;
+  /**No idea what's going on here, but at 100%, it's fugly **/
+  width: 98% !important;
   font-size: 10px;
   color: #999999;
-  border: 1px solid #DDD;
+  border: 1px solid #2e2e2f;
   padding: 0.3em;
   font-size: 14px;
 }
 .wall-item-comment-wrapper .comment-edit-text-full {
   font-size: 14px;
   height: 4em;
-  color: #2e2f2e;
+  color: #eec;
   border: 1px solid #2e2f2e;
 }
 .comment-edit-preview {
@@ -1596,10 +1592,11 @@ transition: all 0.2s ease-in-out;
   height: 2.0em;
   width: 99%;
   font-size: 15px;
-  color: #999999;
-  border: 1px solid #DDD;
+  color: #eec;
+  border: 1px solid #eec;
   padding: 0.3em;
   margin-bottom: 10px;
+  background: #444
 }
 .grey
 {

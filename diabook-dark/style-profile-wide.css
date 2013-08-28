@@ -84,61 +84,61 @@
 /* icons */
 
 .icon.contacts {
-  background-image: url("../diabook-dark/icons/contacts.png");}
+  background-image: url("../diabook-blue/icons/contacts.png");}
 .icon.notifications {
-  background-image: url("../diabook-dark/icons/notifications.png");}
+  background-image: url("../diabook-blue/icons/notifications.png");}
 .icon.notify {
-  background-image: url("../diabook-dark/icons/notify.png");}
+  background-image: url("../diabook-blue/icons/notify.png");}
 .icon.messages {
-  background-image: url("../diabook-dark/icons/messages.png");}
+  background-image: url("../diabook-blue/icons/messages.png");}
 .icon.community {
-  background-image: url("../diabook-dark/icons/community.png");}
+  background-image: url("../diabook-blue/icons/community.png");}
   
-.icon.drop 	{ background-image: url("../diabook-dark/icons/drop.png");}
-.icon.drophide 	{ background-image: url("../diabook-dark/icons/drop.png");}
-.icon.dislike 	{ background-image: url("../diabook-dark/icons/dislike.png");}
-.icon.like 	{ background-image: url("../diabook-dark/icons/like.png");}
-.icon.pencil 	{ background-image: url("../diabook-dark/icons/pencil.png");}
-.icon.recycle 	{ background-image: url("../diabook-dark/icons/recycle.png");}
-.icon.remote-link { background-image: url("../diabook-dark/icons/remote.png");}
-.icon.tagged    { background-image: url("../diabook-dark/icons/tagged.png");}
-.icon.file-as { background-image: url("../diabook-dark/icons/file_as.png");}
-.star-item.icon.unstarred { background-image: url("../diabook-dark/icons/unstarred.png");}
-.star-item.icon.starred { background-image: url("../diabook-dark/icons/starred.png");}
-.icon.link		{ background-image: url("../diabook-dark/icons/link.png");}
-.icon.lock		{ background-image: url("../diabook-dark/icons/lock.png");}
-.icon.unlock		{ background-image: url("../diabook-dark/icons/unlock.png");}
-.icon.language    { background-image: url("../diabook-dark/icons/language.png");}
+.icon.drop 	{ background-image: url("../diabook-blue/icons/drop.png");}
+.icon.drophide 	{ background-image: url("../diabook-blue/icons/drop.png");}
+.icon.dislike 	{ background-image: url("../diabook-blue/icons/dislike.png");}
+.icon.like 	{ background-image: url("../diabook-blue/icons/like.png");}
+.icon.pencil 	{ background-image: url("../diabook-blue/icons/pencil.png");}
+.icon.recycle 	{ background-image: url("../diabook-blue/icons/recycle.png");}
+.icon.remote-link { background-image: url("../diabook-blue/icons/remote.png");}
+.icon.tagged    { background-image: url("../diabook-blue/icons/tagged.png");}
+.icon.file-as { background-image: url("../diabook-blue/icons/file_as.png");}
+.star-item.icon.unstarred { background-image: url("../diabook-blue/icons/unstarred.png");}
+.star-item.icon.starred { background-image: url("../diabook-blue/icons/starred.png");}
+.icon.link		{ background-image: url("../diabook-blue/icons/link.png");}
+.icon.lock		{ background-image: url("../diabook-blue/icons/lock.png");}
+.icon.unlock		{ background-image: url("../diabook-blue/icons/unlock.png");}
+.icon.language    { background-image: url("../diabook-blue/icons/language.png");}
 
 
-.camera 	{ background-image: url("../diabook-dark/icons/camera.png"); 
+.camera 	{ background-image: url("../diabook-blue/icons/camera.png"); 
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
 			  }
-.attach 	{ background-image: url("../diabook-dark/icons/attach.png"); 
+.attach 	{ background-image: url("../diabook-blue/icons/attach.png"); 
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
 			  }
-.video2 	{ background-image: url("../diabook-dark/icons/video.png"); 
+.video2 	{ background-image: url("../diabook-blue/icons/video.png"); 
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
 			  }	
-.video 	{ background-image: url("../diabook-dark/icons/video.png"); 
+.video 	{ background-image: url("../diabook-blue/icons/video.png"); 
 			  display: block; width: 100%; height: 140px; background-repeat: no-repeat;
 			  }
-.audio2 	{ background-image: url("../diabook-dark/icons/audio.png"); 
+.audio2 	{ background-image: url("../diabook-blue/icons/audio.png"); 
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
 			  }
-.audio 	{ background-image: url("../diabook-dark/icons/audio.png"); 
+.audio 	{ background-image: url("../diabook-blue/icons/audio.png"); 
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
 			  }
-.weblink 	{ background-image: url("../diabook-dark/icons/weblink.png"); 
+.weblink 	{ background-image: url("../diabook-blue/icons/weblink.png"); 
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
 			  }
-.globe 	{ background-image: url("../diabook-dark/icons/globe.png"); 
+.globe 	{ background-image: url("../diabook-blue/icons/globe.png"); 
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
 			  }
-.unglobe 	{ background-image: url("../diabook-dark/icons/unglobe.png"); 
+.unglobe 	{ background-image: url("../diabook-blue/icons/unglobe.png"); 
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;
 			  }
-.edit    {background-image: url("../diabook-dark/icons/pencil2.png"); 
+.edit    {background-image: url("../diabook-blue/icons/pencil2.png"); 
 			  display: block; width: 28px; height: 28px; background-repeat: no-repeat;}
 			  
 			  
@@ -176,8 +176,8 @@
 /*.language       { background-position: -210px -40px;}*/
 
 
-.icon.on             { background-image: url("../diabook-dark/icons/toogle_on.png"); background-repeat: no-repeat;}
-.icon.off            { background-image: url("../diabook-dark/icons/toogle_off.png"); background-repeat: no-repeat;}
+.icon.on             { background-image: url("../diabook-blue/icons/toogle_on.png"); background-repeat: no-repeat;}
+.icon.off            { background-image: url("../diabook-blue/icons/toogle_off.png"); background-repeat: no-repeat;}
 .prev           { background-position: -90px  -60px;}
 .next           { background-position: -110px -60px;}
 /*.tagged     { background-position: -130px -60px;}*/
@@ -215,12 +215,12 @@
 }
 
 .icon.border.camera{
-  background-image: url("../diabook-dark/icons/camera.png"); 
+  background-image: url("../diabook-blue/icons/camera.png"); 
   display: block; width: 28px; height: 28px; background-repeat: no-repeat;
 	}
 	
 .icon.border.link{
-  background-image: url("../diabook-dark/icons/weblink.png"); 
+  background-image: url("../diabook-blue/icons/weblink.png"); 
   display: block; width: 28px; height: 28px; background-repeat: no-repeat;
   margin-left: 10px;
 	}
@@ -747,15 +747,15 @@ nav #nav-site-linkmenu .menu-popup {
 }
 
 nav #nav-messages-linkmenu.on .icon.messages, nav #nav-messages-linkmenu.selected .icon.messages{
-	background-image: url("../diabook-dark/icons/messages2.png");
+	background-image: url("../diabook-blue/icons/messages2.png");
 	}
 	
 /*nav #nav-notifications-linkmenu.on .icon.notify,*/ nav #nav-notifications-linkmenu.selected .icon.notify{
-	background-image: url("../diabook-dark/icons/notify2.png");
+	background-image: url("../diabook-blue/icons/notify2.png");
 	}
 	
 nav #nav-contacts-linkmenu.on .icon.contacts, nav #nav-contacts-linkmenu.selected .icon.contacts{
-	background-image: url("../diabook-dark/icons/contacts2.png");
+	background-image: url("../diabook-blue/icons/contacts2.png");
 	}
 	
 nav #nav-apps-link.selected {
@@ -926,22 +926,22 @@ ul.menu-popup .empty {
    }
 /*http://prothemedesign.com/circular-icons/*/
 .menu-profile-list.home{
-	background: url("../diabook-dark/icons/home.png") no-repeat;
+	background: url("../diabook-blue/icons/home.png") no-repeat;
 	}
 .menu-profile-list.photos{
-	background: url("../diabook-dark/icons/mess_side.png") no-repeat;
+	background: url("../diabook-blue/icons/mess_side.png") no-repeat;
 	}
 .menu-profile-list.events{
-	background: url("../diabook-dark/icons/events.png") no-repeat;
+	background: url("../diabook-blue/icons/events.png") no-repeat;
 	}
 .menu-profile-list.notes{
-	background: url("../diabook-dark/icons/notes.png") no-repeat;
+	background: url("../diabook-blue/icons/notes.png") no-repeat;
 	}
 .menu-profile-list.foren{
-	background: url("../diabook-dark/icons/pubgroups.png") no-repeat;
+	background: url("../diabook-blue/icons/pubgroups.png") no-repeat;
 	}
 .menu-profile-list.com_side{
-	background: url("../diabook-dark/icons/com_side.png") no-repeat;
+	background: url("../diabook-blue/icons/com_side.png") no-repeat;
 	}
 
 /* aside */
@@ -1124,11 +1124,11 @@ list-style-type: disc;
   color: #1872A2;
 }
 .widget .tool.selected {
-  background: url("../diabook-dark/icons/selected.png") no-repeat left center;
+  background: url("../diabook-blue/icons/selected.png") no-repeat left center;
 }
 /* widget: search */
 span.sbox_l  {
-	background: white url('../diabook-dark/icons/srch_l.gif') no-repeat top left;
+	background: white url('../diabook/icons/srch_l.gif') no-repeat top left;
 	float: left;
 	width: 19px; height: 19px;
 	margin-left: 10px;
@@ -1137,14 +1137,14 @@ span.sbox_l  {
 }
 
 span.sbox_r  {
-	background: white url('../diabook-dark/icons/srch_r.gif') no-repeat top left;
+	background: white url('../diabook/icons/srch_r.gif') no-repeat top left;
 	float: left;
 	width: 19px; height: 19px;
 	margin-top: 5px;
 }
 
 span.sbox input {
-	background: white url('../diabook-dark/icons/srch_bg.gif') repeat-x top left;
+	background: white url('../diabook/icons/srch_bg.gif') repeat-x top left;
 	float: left;
 	margin-top: 5px;
 	border: 0;
@@ -1240,13 +1240,13 @@ right_aside #ra-photos-wrapper { padding-left: 5px; padding-top: 3px; overflow: 
 #page-sidebar-right_aside .label {max-width: 128px;}
 right_aside .icon {width: 10px; height: 10px;}
 .close_box		{ 
-		background-image: url("../diabook-dark/icons/close_box.png");
+		background-image: url("../diabook-blue/icons/close_box.png");
 		float: right;
 		cursor: pointer;
 		opacity: 0.1;
 		}
 .close_box:hover	{ 
-		background-image: url("../diabook-dark/icons/close_box.png");
+		background-image: url("../diabook-blue/icons/close_box.png");
 		float: right;
 		cursor: pointer;
 		opacity: 1;

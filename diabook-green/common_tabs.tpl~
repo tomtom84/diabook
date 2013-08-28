@@ -1,5 +1,0 @@
-<ul class="right_aside_tabs">
-	{{ for $rs_tabs as $rs_tab }}
-		<li><a href="$rs_tab.url" class="tab button $rs_tab.sel">$rs_tab.label</a></li>
-	{{ endfor }}
-</ul>

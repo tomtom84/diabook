@@ -1,5 +1,0 @@
-<?php echo "hallo welt"; ?>
-<html>
-<a href="http://localhost/friendica/photo/65c0b54afbca4d2c17614f996b56efe2-0.jpg" target="blank" >
-<img src="http://localhost/friendica/photo/65c0b54afbca4d2c17614f996b56efe2-2.jpg"></img></a>
-</html>
